@@ -35,31 +35,6 @@ This simulation demonstrates how multiple processes can be scheduled to run on a
 3. **Input**: Provide the number of processes and CPUs as prompted.
 4. **Output**: The program will display the process execution sequence, CPU allocation, and completion.
 
-### Example
-
-```sh
-$ ./cpuSchedulingSimulation
-Maximum number of processes can only be 25. Enter the number of processes and CPUs:
-5
-2
-A solution to the CPU scheduling problem using semaphores.
-Process 0 is executing.
-Process 1 is executing.
-Process 2 is executing.
-Process 3 is executing.
-Process 4 is executing.
-The CPU is idle.
-Process 0 has completed execution.
-Process 0 added to the ready queue.
-Process 0 requesting CPU.
-The CPU is executing the process.
-Process 1 has completed execution.
-Process 1 added to the ready queue.
-Process 1 requesting CPU.
-Process 0 releases the CPU.
-Process 1 releases the CPU.
-...
-
 ## Code Explanation
 
 - **Initialization**: Semaphores are initialized to manage the ready queue, CPU availability, and process completion.
@@ -85,3 +60,30 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contributions
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+
+### Example
+
+```sh
+$ ./cpuSchedulingSimulation
+Maximum number of processes can only be 25. Enter the number of processes and CPUs:
+5
+2
+A solution to the CPU scheduling problem using semaphores.
+Process 0 is executing.
+Process 1 is executing.
+Process 2 is executing.
+Process 3 is executing.
+Process 4 is executing.
+The CPU is idle.
+Process 0 has completed execution.
+Process 0 added to the ready queue.
+Process 0 requesting CPU.
+The CPU is executing the process.
+Process 1 has completed execution.
+Process 1 added to the ready queue.
+Process 1 requesting CPU.
+Process 0 releases the CPU.
+Process 1 releases the CPU.
+...
+
